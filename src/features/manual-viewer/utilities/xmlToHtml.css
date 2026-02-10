@@ -1,0 +1,407 @@
+/* Scoped to Manual Viewer */
+
+/* Overall manual viewer styling - Light mode */
+.manual-viewer,
+.manual-content {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.manual-content,
+.manual-content * {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode */
+:is(.dark .manual-viewer),
+:is(.dark .manual-content) {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+:is(.dark .manual-content),
+:is(.dark .manual-content *) {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Headings - Light mode */
+.manual-viewer h1,
+.manual-viewer h2,
+.manual-viewer h3,
+.manual-viewer h4,
+.manual-viewer h5,
+.manual-viewer h6,
+.manual-h2,
+.manual-h3,
+.manual-h4 {
+  color: #000000;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+
+/* Headings - Dark mode */
+:is(.dark .manual-viewer) h1,
+:is(.dark .manual-viewer) h2,
+:is(.dark .manual-viewer) h3,
+:is(.dark .manual-viewer) h4,
+:is(.dark .manual-viewer) h5,
+:is(.dark .manual-viewer) h6,
+:is(.dark .manual-h2),
+:is(.dark .manual-h3),
+:is(.dark .manual-h4) {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.manual-viewer h1,
+.manual-h1 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.manual-viewer h2,
+.manual-h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.manual-viewer h3,
+.manual-h3 {
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.manual-viewer h4,
+.manual-h4 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Paragraphs - Light mode */
+.manual-viewer p,
+.manual-paragraph {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Paragraphs - Dark mode */
+:is(.dark .manual-viewer) p,
+:is(.dark .manual-paragraph) {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* Images */
+.manual-viewer img,
+.manual-image {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  display: block;
+}
+
+/* Lists - Light mode */
+.manual-viewer ul,
+.manual-viewer ol,
+.manual-ul,
+.manual-list,
+.manual-unordered-list,
+.manual-ordered-list {
+  margin: 1rem 0;
+  padding-left: 2rem;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.manual-viewer li,
+.manual-ul li,
+.manual-list li,
+.manual-list-item {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*   Lists - Dark mode */
+:is(.dark .manual-viewer) ul,
+:is(.dark .manual-viewer) ol,
+:is(.dark .manual-ul),
+:is(.dark .manual-list),
+:is(.dark .manual-unordered-list),
+:is(.dark .manual-ordered-list) {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+:is(.dark .manual-viewer) li,
+:is(.dark .manual-ul) li,
+:is(.dark .manual-list) li,
+:is(.dark .manual-list-item) {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.manual-viewer ul,
+.manual-ul,
+.manual-unordered-list {
+  list-style-type: disc;
+}
+
+.manual-viewer ol,
+.manual-ordered-list {
+  list-style-type: decimal;
+}
+
+/*   Tables - Light mode */
+.manual-viewer table,
+.manual-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background-color: #ffffff;
+}
+
+.manual-viewer th,
+.manual-viewer td,
+.manual-table th,
+.manual-table td,
+.manual-table-header,
+.manual-table-cell {
+  border: 1px solid #d2d2d2;
+  padding: 0.75rem;
+  text-align: left;
+  color: #000000;
+}
+
+.manual-viewer th,
+.manual-table th,
+.manual-table-header {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.manual-viewer tbody tr:nth-child(odd) td,
+.manual-table tbody tr:nth-child(odd) td,
+.manual-table tbody .manual-table-row:nth-child(odd) .manual-table-cell {
+  background-color: #ffffff;
+}
+
+.manual-viewer tbody tr:nth-child(even) td,
+.manual-table tbody tr:nth-child(even) td,
+.manual-table tbody .manual-table-row:nth-child(even) .manual-table-cell {
+  background-color: #fafafa;
+}
+
+/* Tables - Dark mode */
+:is(.dark .manual-viewer) table,
+:is(.dark .manual-table) {
+  background-color: #000000;
+}
+
+:is(.dark .manual-viewer) th,
+:is(.dark .manual-viewer) td,
+:is(.dark .manual-table) th,
+:is(.dark .manual-table) td,
+:is(.dark .manual-table-header),
+:is(.dark .manual-table-cell) {
+  border: 1px solid #333333;
+  color: #ffffff;
+}
+
+:is(.dark .manual-viewer) th,
+:is(.dark .manual-table) th,
+:is(.dark .manual-table-header) {
+  background-color: #000000;
+}
+
+:is(.dark .manual-viewer) tbody tr:nth-child(odd) td,
+:is(.dark .manual-table) tbody tr:nth-child(odd) td,
+:is(.dark .manual-table) tbody .manual-table-row:nth-child(odd) .manual-table-cell {
+  background-color: #1a1a1a;
+}
+
+:is(.dark .manual-viewer) tbody tr:nth-child(even) td,
+:is(.dark .manual-table) tbody tr:nth-child(even) td,
+:is(.dark .manual-table) tbody .manual-table-row:nth-child(even) .manual-table-cell {
+  background-color: #2d2d2d;
+}
+
+/* Caution / Warning / Note / Danger
+   Theme-aware (light + dark) */
+.manual-viewer :is(div.caution, div.warning, div.note, div.danger),
+.manual-content :is(div.caution, div.warning, div.note, div.danger) {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  display: block;
+  margin: 1rem 0;
+  background-color: transparent;
+}
+
+.manual-viewer :is(span.caution, span.warning, span.note, span.danger),
+.manual-content :is(span.caution, span.warning, span.note, span.danger) {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+/* Light mode */
+.manual-viewer :is(div.caution, span.caution),
+.manual-content :is(div.caution, span.caution) {
+  color: #7a5a00;
+  background-color: #fff7d6;
+  border: 1px solid #f1c40f;
+}
+
+.manual-viewer :is(div.warning, span.warning),
+.manual-content :is(div.warning, span.warning) {
+  color: #8a1f1f;
+  background-color: #ffe3e3;
+  border: 1px solid #ef4444;
+}
+
+.manual-viewer :is(div.note, span.note),
+.manual-content :is(div.note, span.note) {
+  color: #0b3a67;
+  background-color: #e6f1ff;
+  border: 1px solid #3b82f6;
+}
+
+.manual-viewer :is(div.danger, span.danger),
+.manual-content :is(div.danger, span.danger) {
+  color: #7f1d1d;
+  background-color: #ffe0e0;
+  border: 1px solid #dc2626;
+}
+
+/* Dark mode */
+:is(.dark .manual-viewer) :is(div.caution, span.caution),
+:is(.dark .manual-content) :is(div.caution, span.caution) {
+  color: #fcd34d;
+  background-color: #3a2d0f;
+  border: 1px solid #fcd34d;
+}
+
+:is(.dark .manual-viewer) :is(div.warning, span.warning),
+:is(.dark .manual-content) :is(div.warning, span.warning) {
+  color: #fca5a5;
+  background-color: #3a1010;
+  border: 1px solid #ef4444;
+}
+
+:is(.dark .manual-viewer) :is(div.note, span.note),
+:is(.dark .manual-content) :is(div.note, span.note) {
+  color: #93c5fd;
+  background-color: #0f2a3a;
+  border: 1px solid #3b82f6;
+}
+
+:is(.dark .manual-viewer) :is(div.danger, span.danger),
+:is(.dark .manual-content) :is(div.danger, span.danger) {
+  color: #fecaca;
+  background-color: #3a0f0f;
+  border: 1px solid #f87171;
+}
+
+/*   Text formatting */
+.manual-viewer strong,
+.manual-strong {
+  font-weight: 600;
+  background-color: transparent;
+  color: inherit;
+}
+
+.manual-viewer em,
+.manual-em {
+  font-style: italic;
+  background-color: transparent;
+  color: inherit;
+}
+
+.manual-underline {
+  text-decoration: underline;
+  background-color: transparent;
+  color: inherit;
+}
+
+/* Line breaks */
+.manual-viewer br,
+.manual-br {
+  display: block;
+  margin: 0.5rem 0;
+  content: "";
+}
+
+/*Block elements - Light mode */
+.manual-block {
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*Block elements - Dark mode */
+:is(.dark .manual-block) {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/*Address blocks - Light mode */
+.manual-address {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border: 1px solid #d2d2d2;
+  border-radius: 0.5rem;
+}
+
+.manual-address-line {
+  margin-bottom: 0.5rem;
+  color: #000000;
+  background-color: transparent;
+}
+
+.manual-address-key {
+  font-weight: 600;
+  color: #2563eb;
+  background-color: transparent;
+}
+
+/*   Address blocks - Dark mode */
+:is(.dark .manual-address) {
+  background-color: #1a1a1a;
+  border: 1px solid #333333;
+}
+
+:is(.dark .manual-address-line) {
+  color: #ffffff;
+}
+
+:is(.dark .manual-address-key) {
+  color: #93c5fd;
+}
+
+/*Footnotes - Light mode */
+.manual-viewer .footnotes {
+  font-size: 0.95em;
+  margin-top: 1rem;
+  color: #666666;
+  background-color: #ffffff;
+}
+
+/*Footnotes - Dark mode */
+:is(.dark .manual-viewer) .footnotes {
+  color: #999999;
+  background-color: #000000;
+}
