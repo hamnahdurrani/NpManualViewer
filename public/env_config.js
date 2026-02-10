@@ -8,5 +8,5 @@
 
 window.env_config = {
   NPJWI_ENV: "newdev",
-  BUILD_ENV: "development",
+  BUILD_ENV: "release",
 };
